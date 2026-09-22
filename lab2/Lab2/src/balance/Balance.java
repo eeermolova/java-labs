@@ -1,4 +1,4 @@
-package balabce;
+package balance;
 
 public class Balance {
     private int leftWeight = 0;
