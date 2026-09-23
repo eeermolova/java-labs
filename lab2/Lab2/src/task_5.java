@@ -59,11 +59,11 @@ class Table{
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < rowCount; i++) {
             for (int j = 0; j < colCount; j++) {
-                    sb.append(matrix[i][j]);
+                sb.append(matrix[i][j]);
 
-                    if(j<colCount -1){
-                        sb.append(" ");
-                    }
+                if(j < colCount - 1){
+                    sb.append(" ");
+                }
             }
             sb.append("\n");
         }
