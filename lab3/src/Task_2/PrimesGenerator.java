@@ -1,4 +1,5 @@
-package Task_2;
+package Task_2; //подумать над выводом
+
 
 import java.util.ArrayList;
 import java.util.Iterator;
