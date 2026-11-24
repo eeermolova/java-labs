@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane xmlns="http://javafx.com"
+            xmlns:fx="http://javafx.com"
+            fx:controller="app.MainController"
+            prefWidth="800" prefHeight="600">
+
+    <top>
+        <HBox spacing="10" style="-fx-padding: 10; -fx-background-color: #eeeeee;">
+            <Button text="Круг" onAction="#onAddCircle"/>
+            <Button text="Прямоугольник" onAction="#onAddRectangle"/>
+            <Button text="Треугольник" onAction="#onAddTriangle"/>
+            <Button text="Звезда" onAction="#onAddStar"/>
+        </HBox>
+    </top>
+
+    <center>
+        <Pane fx:id="canvasHolder" minWidth="0" minHeight="0">
+            <Canvas fx:id="canvas"
+                    onMousePressed="#onMousePressed"
+                    onMouseDragged="#onMouseDragged"
+                    onMouseReleased="#onMouseReleased"/>
+        </Pane>
+    </center>
+
+</BorderPane>
