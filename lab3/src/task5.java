@@ -6,7 +6,7 @@ public class task5 {
         Map<String, Integer> passportData = new HashMap<>();
         passportData.put("Ivanov", 123456);
         passportData.put("Petrov", 666777);
-        passportData.put("VLV", 778899);
+        passportData.put("VV", 778899);
 
         System.out.println("Оригинальный" + passportData);
         Map<Integer,String> invertedData = invertMap(passportData);
