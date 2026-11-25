@@ -92,6 +92,12 @@ public class MainController {
     }
 
     @FXML
+    private void onClearCanvas() {
+        draggedItem = null;
+        model.clear();
+    }
+
+    @FXML
     private void onMousePressed(MouseEvent event) {
         ShapeItem hit = model.findTopAt(event.getX(), event.getY());
         if (hit == null) return;

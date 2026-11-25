@@ -28,6 +28,11 @@ public class DrawingModel {
         fireChanged();
     }
 
+    public void clear() {
+        items.clear();
+        fireChanged();
+    }
+
     public List<ShapeItem> getItems() {
         return Collections.unmodifiableList(items);
     }

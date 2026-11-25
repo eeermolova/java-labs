@@ -17,6 +17,7 @@
             <Button text="Прямоугольник" onAction="#onAddRectangle"/>
             <Button text="Треугольник" onAction="#onAddTriangle"/>
             <Button text="Звезда" onAction="#onAddStar"/>
+            <Button text="Очистить холст" onAction="#onClearCanvas"/>
         </HBox>
     </top>
 
